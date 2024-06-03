@@ -3,4 +3,21 @@ name = "merkle_tree"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "merkle_tree"
+path = "src/main.rs"
+
+[lib]
+name = "merkle_tree"
+path = "src/lib.rs"
+
 [dependencies]
+rust-crypto = "^0.2"
+hex = "0.4.3"
+
+[dev-dependencies]
+criterion = "0.4"
+
+[[bench]]
+name = "benchmark"
+harness = false
